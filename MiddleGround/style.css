@@ -1,5 +1,85 @@
 body
+*{
+    margin: 0;
+    padding: 0;
+}
+#title_middle
 {
-    background-color: mediumpurple;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    font-family: Papyrus,fantasy;
+    text-shadow: 2px 2px #000000;
+    padding-top: 10px;
+    text-decoration-style: wavy;
+}
+.body_about
+{
+    text-align: center;
+    background-color: #e1b382;
+    color: whitesmoke;
+    background-clip: padding-box;
+    padding: 10px 10px 10px 10px;
+    float: center;
+    text-shadow: -1.8px -1.8px 1px #666;
+    border-radius: 60px;
+    display: block;
+    align-content: center;
+}
+.head
+{
+    background-repeat: no-repeat, repeat;
+    background-color: #2d545e, #12343b;
+    background-blend-mode: lighten;
+}
+nav
+{
+    background-color: silver;
+    width: 1200px;
+    height: 50px;
+}
+#container
+{
+    background: #12343b;
+    width: 1200px;
 
+    margin: 0 auto;
+    border: 1px solid_black;
+}
+header
+{
+    background-color: #2d545e;
+    width: 1200px;
+    height: 70px;
+}
+header iframe
+{
+    align-content: center;
+    padding: 100px;
+}
+section header
+{
+    background: none;
+    width: 0;
+    height: 0;
+}
+section
+{
+    background-color: grey;
+    width: 900px;
+    height: 900px;
+    float: left;
+}
+aside
+{
+    background-color: green;
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+footer
+{
+    background-color: yellow;
+    width: 1200px;
+    height: 50px;
 }
