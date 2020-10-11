@@ -1,3 +1,11 @@
+.white
+{
+    color: white;
+}
+.strip_wrapper
+{
+    background-color: #10131a;
+}
 #bg_about_us
 {
     background-color: #333232;
@@ -6,21 +14,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
 }
 
 #title_middle
 {
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     font-family: Papyrus,fantasy;
     text-shadow: 2px 2px #000000;
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration-style: wavy;
+
 }
 .body_about
 {
+    font-family: Papyrus,fantasy;
     width: 1000px;
     text-align: center;
     font-size: 70;
@@ -33,21 +45,26 @@
     border-radius: 55px;
     display:inline-block;
 }
+ne-block;
+}
 .head
 {
+    font-family: Papyrus,fantasy;
     background-repeat: no-repeat, repeat;
     background-color: #2d545e, #12343b;
     background-blend-mode: lighten;
 }
 nav
 {
+    font-family: Papyrus,fantasy;
     background-color: silver;
     width: 1200px;
     height: 50px;
 }
 #container
 {
-    background: #12343b;
+    font-family: Papyrus,fantasy;
+    background: #6476a1;
     width: 1200px;
 
     margin: 0 auto;
@@ -55,37 +72,45 @@ nav
 }
 header
 {
-    background-color: #2d545e;
+    font-family: Papyrus,fantasy;
+    background-color: #6476a1;
     width: 1200px;
     height: 70px;
 }
-header iframe
+
+.iframe_header
 {
+    color: white;
+    font-family: Papyrus,fantasy;
     align-content: center;
-    padding: 100px;
 }
 section header
 {
+    font-family: Papyrus,fantasy;
     background: none;
     width: 0;
     height: 0;
 }
 section
 {
-    background-color: grey;
+    font-family: Papyrus,fantasy;
+    background: url('photos/background+for+website+headers.jpg');
+    background-size: cover;
     width: 900px;
     height: 900px;
     float: left;
 }
 aside
 {
-    background-color: green;
+    font-family: Papyrus,fantasy;
+    background-color: #6476a1;
     width: 300px;
     height: 500px;
     float: left;
 }
 footer
 {
+    font-family: Papyrus,fantasy;
     background-color: yellow;
     width: 1200px;
     height: 50px;
@@ -100,34 +125,39 @@ footer
 }
 .column
 {
+    font-family: Papyrus,fantasy;
     float: left;
     padding: 20px;
 }
 
 .left, .right
 {
+    font-family: Papyrus,fantasy;
     width: 33.33333%;
     height: 110%;
 }
 
 .middle
 {
+    font-family: Papyrus,fantasy;
     width: 33%;
     height: 110%;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row:after
+{
+    font-family: Papyrus,fantasy;
+    content: "";
+    display: table;
+    clear: both;
 }
-
-<<<<<<< HEAD
 #body_bg
 {
-    background-color: maroon;
-    scroll-behavior: smooth;
+    background: url('photos/images.jpg');
+    background-size: cover;
 }
+<<<<<<< HEAD
+
 #about_us
 {
     text-align: center;
@@ -138,6 +168,7 @@ footer
 }
 #ul1
 {
+    font-family: Papyrus,fantasy;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -147,25 +178,34 @@ footer
   height: 100%;
   overflow: auto;
 }
-
+ul
+{
+    list-style: none;
+}
 li a
 {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+    font-family: Papyrus, fantasy;
+    font-size: 40;
+    display: block;
+    color: #000;
+    padding: 20px 20px;
+    text-decoration: none;
 }
 
 li a.active
 {
-  background-color: #4CAF50;
-  color: white;
+    font-family: Papyrus, fantasy;
+    font-size: 40;
+    background-color: black;
+    color: white;
 }
 
 li a:hover:not(.active)
 {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
+    font-family: Papyrus, fantasy;
+    font-size: 40;
 }
 =======
 
@@ -182,7 +222,15 @@ li a:hover:not(.active)
     cursor: pointer;
 }
 
-.button1 {background-color: red;}
-.button2 {background-color: blue;}
+.button1
+{
+
+    background-color: red;
+}
+.button2
+{
+
+    background-color: blue;
+}
 
 >>>>>>> MiddleGround/master
