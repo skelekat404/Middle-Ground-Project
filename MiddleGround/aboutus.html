@@ -1,12 +1,58 @@
 <!DOCTYPE hmtl>
-<html>
+<html id="bg_about_us">
     <head>
         <title>About Us</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <h1 class="body_about">About Us</h1>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #12343b;
+                border-width: thick;
+                border-color: white
+            }
+
+            li
+            {
+                float: left;
+                border-right:1px solid #bbb;
+            }
+
+            li:last-child
+            {
+                border-right: none;
+            }
+
+            li a
+            {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 19 20;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active)
+            {
+                background-color: #111;
+            }
+            .active
+            {
+                background-color: #4CAF50;
+            }
+        </style>
     </head>
     <body class="head" id="about_us">
         <br>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="news_sources.html">News Sources</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
         <div class="row">
         <div class="column left" style="background-color:#12343b;">
             <h2>Back-End Development</h2>
