@@ -12,6 +12,7 @@
     font-family: Papyrus,fantasy;
     text-shadow: 2px 2px #000000;
     padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration-style: wavy;
 }
 .body_about
@@ -86,30 +87,45 @@ footer
 }
 #form_align
 {
-   font-family: Papyrus, fantasy;
+    font-family: Papyrus, fantasy;
     text-align: right;
     padding-right: 10px;
     font-weight: bold;
     font-size: 15px;
 }
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-
+.column
+{
+    float: left;
+    padding: 20px;
 }
 
-.left, .right {
-  width: 25%;
+.left, .right
+{
+    width: 33%;
+    height: 110%;
 }
 
-.middle {
-  width: 50%;
+.middle
+{
+    width: 33%;
+    height: 110%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+#body_bg
+{
+    background-color: maroon;
+    scroll-behavior: smooth;
+}
+#about_us
+{
+    text-align: center;
+    scroll-behavior: smooth;
+    font-family: Papyrus, fantasy;
+    font-size: 20;
+    color: white;
 }
