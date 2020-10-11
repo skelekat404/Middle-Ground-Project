@@ -23,7 +23,7 @@
     padding: 10px 10px 10px 10px;
     float: center;
     text-shadow: -1.8px -1.8px 1px #666;
-    border-radius: 60px;
+    border-radius: 55px;
     display: block;
     align-content: center;
 }
@@ -113,3 +113,19 @@ footer
   display: table;
   clear: both;
 }
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {background-color: red;}
+.button2 {background-color: blue;}
+
