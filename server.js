@@ -1,6 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
+
 const bodyparser = require('body-parser') 
 const express = require("express") 
 const path = require('path') 
@@ -8,12 +9,13 @@ const app = express()
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('be62d0d26ca5409787ce10b237890536');
 var search; 
-var left_results;
-var right_results;
+
+var left_results = [];
+
 
 // View Engine Setup 
-app.set("views", path.join(__dirname)) 
-app.set("view engine", "ejs") 
+//app.set("views", path.join(__dirname)) 
+//app.set("view engine", "ejs") 
   
 // Body-parser middleware 
 app.use(bodyparser.urlencoded({extended:false})) 
@@ -29,21 +31,35 @@ app.post('/saveData', (req, res) => {
      console.log(search)
     
      newsapi.v2.topHeadlines({
-        sources: 'cnn',
+        sources: 'fox-news', //CNN
         q: search,
         
         language: 'en',
      
       }).then(response => {
-      console.log(response);
-        left_results = response;
-        /*
-          {
-            status: "ok",
-            articles: [...]
+     // console.log(response);
+  //      left_results = response;
+          left_results = []
+
+
+        console.log(response.articles[0].author)
+        const articles = response.articles
+
+        for(let i =0; i < articles.length; i++){
+   
+          let newObject = {
+            title: articles[i].title,
+            author: articles[i].author,
+            url: articles[i].url
           }
-        */
+
+      //    console.log(newObject)
+          left_results.push(newObject)
+
+        }
+        console.log({left_results})
       });
+
       newsapi.v2.topHeadlines({
         sources: 'fox-news',
         q: search,
@@ -62,11 +78,17 @@ app.post('/saveData', (req, res) => {
       });
      
    
-     get('*',function(req,res){  
-        res.redirect('/searchresults'+req.url)
+      
     })
+    app.get('/searchresults', (req, res) => {
+      res.render('searchresults.html')
+  
+  })
+  
+  app.post('/searchresults', (req, res) => {
+      res.render('searchresults.html')
+  } )
 
-}) 
 
 
 //Static Files
