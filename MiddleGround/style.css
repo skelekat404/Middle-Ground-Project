@@ -20,6 +20,7 @@
 
 #title_middle
 {
+    border-style: groove;
     color: whitesmoke;
     font-size: 45px;
     text-align: center;
@@ -110,7 +111,7 @@ section
     background: url('photos/background+for+website+headers.jpg');
     background-size: cover;
     width: 900px;
-    height: 900px;
+    height: 1400px;
     float: left;
 }
 aside
@@ -245,5 +246,8 @@ li a:hover:not(.active)
 
     background-color: blue;
 }
-
+.button3
+{
+    background-color: #6476a1;
+}
 >>>>>>> MiddleGround/master
