@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>News Sources</title>
-    </head>
-    <body>
+        <h1 id="news_sources">News Sources</h1>
+        <style>
+            ul
+            {
+                list-style: none;
+            }
+            li a
+            {
+                font-family: Papyrus, fantasy;
+                font-size: 40;
+                display: block;
+                color: #000;
+                padding: 20px 20px;
+                text-decoration: none;
+            }
 
+            li a.active
+            {
+                font-family: Papyrus, fantasy;
+                font-size: 40;
+                background-color: ;
+                color: white;
+            }
+
+            li a:hover:not(.active)
+            {
+                background-color: #1c1d1f;
+                color: white;
+                font-family: Papyrus, fantasy;
+                font-size: 40;
+            }
+        </style>
+
+    </head>
+    <body class="news_source">
+        <ul style="border-style: outset">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="news_sources.html">News Sources</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <ul>
+            <div class="row">
+                <div class="column left" >
+                    <a href="https://www.foxnews.com/"><img src="photos/fox.png" style="padding-left: 40px"></a>
+                    <p></p> <br>
+                </div>
+                <div class="column right" style="padding: 100px 100px 100px 150px">
+                    <a href="https://www.cnn.com/"><img src="photos/cnn.png"></a>
+                    <p></p> <br>
+
+                </div>
+            </div>
+        </ul>
     </body>
 </html>

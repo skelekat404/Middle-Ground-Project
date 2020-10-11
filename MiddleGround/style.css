@@ -54,6 +54,14 @@ ne-block;
     background-color: #2d545e, #12343b;
     background-blend-mode: lighten;
 }
+#news_sources
+{
+    color: white;
+    font-family: Papyrus,fantasy;
+    text-align: center;
+    font-size: 120px;
+    border-style: hidden;
+}
 nav
 {
     font-family: Papyrus,fantasy;
@@ -83,6 +91,11 @@ header
     color: white;
     font-family: Papyrus,fantasy;
     align-content: center;
+}
+.news_source
+{
+    background: url('photos/newsbreak.jpg');
+    background-size: cover;
 }
 section header
 {
