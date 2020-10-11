@@ -8,6 +8,8 @@ const path = require('path')
 const app = express() 
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('be62d0d26ca5409787ce10b237890536');
+const bcrypt = require('bcrypt')
+
 var search; 
 
 var left_results = [];
@@ -89,7 +91,45 @@ app.post('/saveData', (req, res) => {
       res.render('searchresults.html')
   } )
 
+//login info
+const users = []
 
+app.set('view-engine', 'ejs')
+app.use(express.urlencoded({extended: false}))
+
+app.get('/profile', (req, res) => {
+    res.render('index.ejs', {name: 'Anthony'})
+})
+
+app.get('/login', (req, res) => {
+    res.render('Login.ejs')
+
+})
+
+app.post('/login', (req, res) => {
+    res.render('login.ejs')
+} )
+
+app.get('/register', (req, res) => {
+    res.render('register.ejs')
+
+})
+
+app.post('/register', async (req, res) => {
+    try{
+        const hashedPassword = await bcrypt.hash(req.body.password, 10)
+        users.push({
+            id: Date.now().toString(),
+            name: req.body.name,
+            email: req.body.email,
+            password: hashedPassword
+        })
+        res.redirect('/login')
+    } catch {
+        res.redirect('/register')
+    }
+    
+})
 
 //Static Files
 
