@@ -1,3 +1,5 @@
+
+
 .white
 {
     color: white;
@@ -221,6 +223,20 @@ li a:hover:not(.active)
     font-family: Papyrus, fantasy;
     font-size: 40;
 }
+body::-webkit-scrollbar
+{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track
+{
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: #3a4663;
+}
+
 =======
 
 .button
