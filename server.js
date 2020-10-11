@@ -62,7 +62,9 @@ app.post('/saveData', (req, res) => {
       });
      
    
-      res.send("Good")
+     get('*',function(req,res){  
+        res.redirect('/searchresults'+req.url)
+    })
 
 }) 
 
